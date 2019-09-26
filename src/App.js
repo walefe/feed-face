@@ -1,9 +1,11 @@
 import React from "react";
 
+import Header from "./Components/Header/Header";
+
 import "./App.css";
 
 function App() {
-  return <h1>Facebook</h1>;
+  return <Header />;
 }
 
 export default App;
