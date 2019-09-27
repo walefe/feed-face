@@ -1,0 +1,44 @@
+li {
+  width: 701px;
+  height: 254px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+li:first-child {
+  margin-top: 0;
+}
+
+div.author {
+  display: flex;
+  margin: 10px 24px;
+}
+
+div.author img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+li div.describe {
+  display: flex;
+  flex-direction: column;
+}
+
+li div.describe h1 {
+  font-size: 15px;
+}
+
+li div.describe span {
+  color: #7b8b9a;
+  font-size: 9px;
+  margin-top: 2px;
+}
+
+li p {
+  font-size: 15px;
+  margin-top: 18px;
+  margin-left: 24px;
+}
