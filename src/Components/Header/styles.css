@@ -6,9 +6,27 @@ header {
   background: #4a90e2;
 }
 
-header h1 {
+header > h1 {
   color: #ffffff;
   margin: 15px 42px;
+}
+
+div.profile {
+  display: flex;
+  align-items: center;
+}
+
+header div.profile h1 {
+  color: #ffffff;
+}
+
+div.profile img {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 64px;
+  margin-left: 10px;
 }
 
 header a {
