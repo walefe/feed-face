@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 
 import Post from "../Post/Post";
+import Comment from "../Comments/Comments";
 
 import "./styles.css";
+import Avatar from "../../assets/profile.jpg";
+import Octocat from "../../assets/octocat.png";
 
 class PostList extends Component {
   state = {
@@ -11,7 +14,7 @@ class PostList extends Component {
         id: 1,
         author: {
           name: "Julio Alcantara",
-          avatar: "http://url-da-imagem.com/imagem.jpeg"
+          avatar: Avatar
         },
         date: "26 Set 2019",
         content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
@@ -20,26 +23,27 @@ class PostList extends Component {
             id: 1,
             author: {
               name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
+              avatar: Octocat
             },
             content: "Conteúdo do comentário"
           }
         ]
       },
       {
-        id: 1,
+        id: 2,
         author: {
-          name: "Julio Alcantara",
-          avatar: "http://url-da-imagem.com/imagem.jpeg"
+          name: "Gabriel Lisboa",
+          avatar: Octocat
         },
         date: "26 Set 2019",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
+        content:
+          "Fala galera, beleza?\n\nEstou fazendo o Bootcamp GoStack da RocketSeat e está sendo muito massa! Alguém mais aí fazendo, comenta na publicação pra trocarmos ideia.",
         comments: [
           {
             id: 1,
             author: {
               name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
+              avatar: Avatar
             },
             content: "Conteúdo do comentário"
           }
@@ -49,10 +53,11 @@ class PostList extends Component {
   };
 
   render() {
+    const posts = this.state.posts;
     return (
       <ul>
-        {this.state.posts.map(post => (
-          <Post key={post} post={post} />
+        {posts.map(post => (
+          <Post key={post.id} post={post} />
         ))}
       </ul>
     );

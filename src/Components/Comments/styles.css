@@ -1,0 +1,33 @@
+div.comment {
+  display: flex;
+  justify-content: baseline;
+  width: 677px;
+  height: 124px;
+  margin: 45px 20px;
+}
+
+div.comment div.content {
+  display: flex;
+  background: #e7e9ec;
+
+  width: 600px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+div img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+div.comment h1 {
+  font-size: 15px;
+}
+
+div.comment p {
+  margin-top: 0;
+  margin-left: 5px;
+}
