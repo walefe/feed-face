@@ -22,4 +22,4 @@ As informações contidas na interface são **estáticas**.
 
 ### Tela da aplicação
 
-<img src="./assets/FeedFace.png">
+<img src="./src/assets/FeedFace.png">
